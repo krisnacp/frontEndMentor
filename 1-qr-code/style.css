@@ -27,7 +27,7 @@ body {
     width: 320px;
     border-radius: 20px;
     background-color: var(--card-background-color);
-    margin: 115px auto;
+    margin: 85px auto 0;
 }
 
 /* card image */
@@ -65,6 +65,6 @@ body {
 /* responsive */
 @media screen and (min-width: 700px) {
     .card {
-        margin: 115px auto;
+        margin: 150px auto 0;
     }
 }
