@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Outfit:wght@100;400;700&display=swap");
+:root {
+    --main-font-color: hsl(218, 44%, 22%);
+    --subMain-font-color: hsl(220, 15%, 55%);
+    --body-background-color: hsl(212, 45%, 89%);
+    --card-background-color: hsl(0, 0%, 100%);
+    --main-font-size: 0.9375em;
+    --main-font-family: "Outfit", sans-serif;
+}
+/* mobile: 375px
+desktop: 1440px */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-background-color);
+    font-size: var(--main-font-size);
+}
+
+.card {
+    width: 320px;
+    border-radius: 20px;
+    background-color: var(--card-background-color);
+    margin: 85px auto 0;
+}
+
+/* card image */
+.card-img {
+    width: 285px;
+    padding-top: 15px;
+    margin: 0 auto 20px;
+}
+
+.card-img img {
+    width: 285px;
+    border-radius: 15px;
+}
+/* end of card image */
+
+/* card content */
+.card-content {
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: var(--main-font-family);
+}
+
+.title-content {
+    color: var(--main-font-color);
+    margin: 0 0 20px;
+}
+
+.card-content {
+    color: var(--subMain-font-color);
+    padding-bottom: 45px;
+}
+/* end of card content */
+
+/* responsive */
+@media screen and (min-width: 700px) {
+    .card {
+        margin: 150px auto 0;
+    }
+}
